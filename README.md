@@ -12,40 +12,6 @@ bool balanceFile(istream &dictfile);
 bool Matching(char, char);
 void getChar(char& c, istream&infile, int& i);
 
-
-//void checkings() {
-//	stringstream double_paren = stringstream(string{ "()()" });
-//	assert(balanceFile(double_paren));
-//	stringstream quotes = stringstream(string{ "\"(dfd)(\"" });
-//	assert(balanceFile(quotes));
-//	stringstream eofline = stringstream(string{ "\"()()}"});
-//	assert(!balanceFile(eofline));
-//	stringstream newLine = stringstream(string{ "\"()()}\n\"" });
-//	assert(!balanceFile(newLine));
-//	stringstream singleQuotes = stringstream(string{ "'\"\"\"'" });
-//	assert(balanceFile(singleQuotes));
-//	stringstream singleLineComment = stringstream(string{ "//(}" });
-//	assert(balanceFile(singleLineComment));
-//	stringstream parenWithComment = stringstream(string{ "{//(\n}" });
-//	assert(balanceFile(parenWithComment));
-//	stringstream multiLineCommentBasic = stringstream(string{ "/*56*/" });
-//	assert(balanceFile(multiLineCommentBasic));
-//	stringstream multiLineComment = stringstream(string{ "/*54*(]*6*7*/" });
-//	assert(balanceFile(multiLineComment));
-//	stringstream multiLineComment2 = stringstream(string{ "int x=5/(1+2);" });
-//	assert(balanceFile(multiLineComment2));
-//	stringstream lineCommentAfterMultiline = stringstream(string{ "/**///this isok." });
-//	assert(balanceFile(lineCommentAfterMultiline));
-//	stringstream oneStarMultiline = stringstream(string{ "/*/" });
-//	assert(!balanceFile(oneStarMultiline));
-//	stringstream bandaidSolution = stringstream(string{ "/*/ok*/" });
-//	assert(balanceFile(bandaidSolution));
-//	stringstream endingStar = stringstream(string{ "/* *" });
-//	assert(!balanceFile(endingStar));
-//	stringstream unmatchedMultiline = stringstream(string{ "\n\n/*\na" });
-//	assert(!balanceFile(unmatchedMultiline));
-//}
-
 struct charAndLine
 {
 	int line;
